@@ -7,7 +7,7 @@ class Student(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField(max_length=100)
     field_of_study = models.CharField(max_length=50)
-    gpa = models.FloatField()
+    gpa = models.FloatField() 
 
 def __str__(self):
     return f'Student: {self.first_name} {self.last_name}'
